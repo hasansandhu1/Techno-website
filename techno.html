@@ -1,0 +1,3508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        .aa {
+            width: 50%;
+            height: 593px;
+            background-color: black;
+            top: 0;
+            left: 0;
+            position: absolute;
+            animation-name: aa;
+            animation-duration: 1s;
+            animation-delay: 2.6s;
+            animation-fill-mode: forwards;
+            z-index: 100;
+        }
+
+        @keyframes aa {
+            0% {}
+
+            100% {
+                left: -100%;
+            }
+        }
+
+        .aaa {
+            width: 50%;
+            height: 593px;
+            background-color: black;
+            position: absolute;
+            top: 0;
+            right: 0;
+            animation-name: aaa;
+            animation-duration: 0.8s;
+            animation-delay: 2.6s;
+            z-index: 100;
+            animation-fill-mode: forwards;
+
+        }
+
+        @keyframes aaa {
+            0% {
+                right: 0;
+            }
+
+            100% {
+                right: -100%;
+            }
+        }
+
+        .a {
+            width: 100%;
+            height: 593px;
+            background-color: rgba(0, 0, 0, 0);
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            animation-name: a;
+            animation-duration: 0.8s;
+            animation-delay: 1.8s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes a {
+            0% {
+                margin-top: 0;
+            }
+
+            100% {
+                margin-top: -593px;
+            }
+        }
+
+        .a1 {
+            width: 15px;
+            height: 15px;
+            border-radius: 100%;
+            background-color: blue;
+            display: inline-block;
+            position: absolute;
+            top: 255px;
+            left: 49.65%;
+        }
+
+        .a2 {
+            width: 15px;
+            height: 15px;
+            border-radius: 100%;
+            background-color: yellow;
+            display: inline-block;
+            position: absolute;
+            top: 256px;
+            left: 52%;
+            vertical-align: top;
+            animation-name: a3;
+            animation-duration: 0.8s;
+            animation-iteration-count: infinite;
+            animation-delay: 0.75s;
+
+        }
+
+
+
+        .a3 {
+            width: 15px;
+            height: 15px;
+            border-radius: 100%;
+            background-color: rgb(255, 255, 0);
+            position: absolute;
+            left: 52%;
+            top: 256px;
+            animation-name: a3;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes a3 {
+            0% {}
+
+            25% {
+                margin-left: -30px;
+                margin-top: 28px;
+            }
+
+            50% {
+                margin-top: 0;
+                margin-left: -61px;
+            }
+
+            75% {
+                margin-left: -30px;
+                margin-top: -28px;
+            }
+
+            100% {
+                margin-top: 0;
+                margin-left: 0;
+            }
+
+
+        }
+
+        .a4 {
+            width: 100%;
+            height: 45px;
+            background-color: #0C59D8;
+            padding: 1px;
+        }
+
+        .a5 {
+            color: white;
+            margin-left: 80px;
+            margin-top: 13px;
+            display: inline-block;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .a6 {
+            margin-right: 10px;
+        }
+
+        .a7 {
+            color: white;
+            margin-left: 16px;
+            margin-top: 13px;
+            display: inline-block;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .a8 {
+            color: white;
+            margin-left: 470px;
+            margin-top: 13px;
+            display: inline-block;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .a9 {
+            color: white;
+            margin-left: 10px;
+            margin-top: 13px;
+            display: inline-block;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .a10 {
+            width: 100%;
+            height: 85px;
+            background-color: #00247E;
+            padding: 1px;
+            position: sticky;
+            top: -1px;
+            z-index: 2;
+        }
+
+        .b {
+            margin-left: 60px;
+            margin-top: 25px;
+            cursor: pointer;
+        }
+
+        .b1 {
+            display: inline-block;
+            margin-left: 255px;
+            margin-top: 35px;
+            vertical-align: top;
+        }
+
+        .b1 ul {
+            list-style: none;
+        }
+
+        .b1 ul li {
+            display: inline-block;
+            margin-left: 19px;
+            cursor: pointer;
+            color: white;
+            height: 50px;
+        }
+
+        .b2 {
+            width: 160px;
+            height: 50px;
+            display: inline-block;
+            background-color: white;
+            border-radius: 5px;
+            margin-left: 20px;
+            vertical-align: top;
+            margin-top: 18px;
+            padding: 1px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .b3 {
+            color: #0C59D8;
+            margin-top: 16px;
+            margin-left: 30px;
+            font-size: 18px;
+        }
+
+        .b4 {
+            width: 160px;
+            height: 50px;
+            background-color: #00247ea0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: 1s;
+            opacity: 0;
+        }
+
+        .b2:hover .b4 {
+            opacity: 1;
+            height: 0px;
+        }
+
+        .b5 {
+            width: 160px;
+            height: 50px;
+            background-color: #00247ea0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: 1s;
+            opacity: 0;
+        }
+
+        .b2:hover .b5 {
+            opacity: 1;
+            width: 0px;
+        }
+
+        .background {
+            width: 100%;
+            height: 920px;
+            background-image: url(image/slider-6.jpg);
+            background-position: center;
+            background-size: cover;
+            padding: 1px;
+        }
+
+        .b6 {
+            color: white;
+            text-align: center;
+            margin-top: 280px;
+            font-size: 21px;
+        }
+
+        .b7 {
+            width: 1050px;
+            height: 80px;
+            margin-top: 30px;
+            margin-left: 100px;
+
+        }
+
+        .b77 {
+            width: 1050px;
+            height: 80px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /* animation-name: b77;
+            animation-duration: 4s;
+            animation-iteration-count: infinite; */
+            position: relative;
+
+        }
+
+        /* @keyframes b77 {
+            0%{
+                width: 1050px;
+            }
+            100%{
+                width: 0;
+            }
+        } */
+
+
+        .b7 p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            white-space: nowrap;
+            opacity: 0;
+        }
+
+
+        .b8 {
+            text-align: center;
+            font-size: 55px;
+            color: white;
+            font-weight: 700;
+            animation-name: b8;
+            overflow: hidden;
+            animation-duration: 16s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes b8 {
+
+            0% {
+                opacity: 1;
+                width: 0px;
+            }
+
+            6.3% {
+                width: 700px;
+            }
+
+            18.6% {
+                width: 700px;
+            }
+
+            25% {
+                opacity: 1;
+                width: 0px;
+            }
+
+            26% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 0;
+            }
+
+            75% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+
+            }
+        }
+
+        .b9 {
+            text-align: center;
+            font-size: 55px;
+            color: white;
+            font-weight: 700;
+            animation-name: b9;
+            animation-duration: 16s;
+            animation-iteration-count: infinite;
+            overflow: hidden;
+        }
+
+        @keyframes b9 {
+            0% {
+                opacity: 0;
+            }
+
+            25% {
+                opacity: 0;
+            }
+
+            26% {
+                opacity: 1;
+                width: 0px;
+            }
+
+            32.3% {
+                width: 700px;
+            }
+
+            44.6% {
+                width: 700px;
+            }
+
+            50% {
+                opacity: 1;
+                width: 0px;
+            }
+
+            51% {
+                opacity: 0;
+            }
+
+            75% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+
+            }
+
+
+        }
+
+        .b10 {
+            text-align: center;
+            font-size: 55px;
+            color: white;
+            font-weight: 700;
+            animation-name: b10;
+            animation-duration: 16s;
+            animation-iteration-count: infinite;
+            overflow: hidden;
+        }
+
+        @keyframes b10 {
+            0% {
+                opacity: 0;
+            }
+
+            25% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 0;
+            }
+
+            51% {
+                opacity: 1;
+                width: 0px;
+            }
+
+            57.3% {
+                width: 700px;
+            }
+
+            69.6% {
+                width: 700px;
+            }
+
+            75% {
+                opacity: 1;
+                width: 0px;
+            }
+
+            76% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+
+            }
+        }
+
+        .b11 {
+            text-align: center;
+            font-size: 55px;
+            color: white;
+            font-weight: 700;
+            animation-name: b11;
+            animation-duration: 16s;
+            animation-iteration-count: infinite;
+            overflow: hidden;
+        }
+
+        @keyframes b11 {
+
+            0% {
+                opacity: 0;
+            }
+
+            25% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 0;
+            }
+
+            75% {
+                opacity: 0;
+            }
+
+            76% {
+                opacity: 1;
+                width: 0px;
+            }
+
+            82.3% {
+                width: 850px;
+            }
+
+            94.6% {
+                width: 850px;
+            }
+
+            100% {
+                opacity: 1;
+                width: 0px;
+
+            }
+        }
+
+        .c {
+            text-align: center;
+            color: white;
+            margin-top: 30px;
+            font-size: 18px;
+        }
+
+        .c1 {
+            text-align: center;
+            color: white;
+            margin-top: 7px;
+            font-size: 18px;
+        }
+
+        .li1 {
+            width: 1000px;
+            height: 450px;
+            background-color: rgb(255, 255, 255);
+            position: absolute;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.1s;
+            left: 150px;
+            top: 85px;
+
+        }
+
+        .b1 ul li:hover .li1 {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .li2 {
+            width: 250px;
+            height: 450px;
+            background-color: white;
+            position: absolute;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.1s;
+            top: 85px;
+        }
+
+        .b1 ul li:hover .li2 {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .li3 {
+            width: 250px;
+            height: 350px;
+            background-color: white;
+            position: absolute;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.1s;
+            top: 85px;
+        }
+
+        .b1 ul li:hover .li3 {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* .li4{
+            width: 1000px;
+            height: 300px;
+            background-color: rgb(255, 255, 255);
+            position: absolute;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.2s;
+            left: 100px;
+            top: 85px;
+        } */
+        .b1 ul li:hover .li4 {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .lii {
+            width: 250px;
+            height: 450px;
+            background-color: rgb(255, 255, 255);
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .lii1 {
+            width: 250px;
+            height: 450px;
+            background-color: rgb(255, 255, 255);
+            display: inline-block;
+            vertical-align: top;
+            margin-left: -4.5px;
+        }
+
+        .liii {
+            width: 250px;
+            height: 50px;
+            padding: 1px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .let {
+            margin-left: 20px;
+            margin-top: 12px;
+            color: black;
+            font-size: 18px;
+            transition: 0.5s;
+            position: relative;
+        }
+
+        .liii:hover .let {
+            color: rgb(255, 255, 255);
+        }
+
+        .overflow {
+            width: 250px;
+            height: 50px;
+            background-color: #0c5ad8;
+            position: absolute;
+            top: -50px;
+            transition: 0.5s;
+        }
+
+        .liii:hover .overflow {
+            top: 0;
+        }
+
+        .c2 {
+            width: 170px;
+            height: 58px;
+            border-radius: 5px;
+            margin-top: 50px;
+            margin-left: 430px;
+            background-color: #0C59D8;
+            padding: 1px;
+            display: inline-block;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .c2:hover {
+            background-color: #00247E;
+        }
+
+        .c3 {
+            color: white;
+            margin-left: 34px;
+            margin-top: 18px;
+            font-size: large;
+        }
+
+        .c4 {
+            margin-left: 10px;
+        }
+
+        .c5 {
+            width: 190px;
+            height: 58px;
+            border-radius: 5px;
+            margin-left: 24px;
+            background-color: #00247E;
+            padding: 1px;
+            display: inline-block;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .c5:hover {
+            background-color: #0C59D8;
+        }
+
+        .c6 {
+            width: 100%;
+            height: 350px;
+            background-color: rgb(240, 240, 240);
+            position: relative;
+        }
+
+        .c7 {
+            width: 350px;
+            height: 415px;
+            background-color: white;
+            position: absolute;
+            top: -100px;
+            left: 75px;
+            border-radius: 5px;
+            transition: 0.4s;
+            padding: 1px;
+        }
+
+        .c7:hover {
+            top: -120px;
+            background-color: #0C59D8;
+        }
+
+        .c8 {
+            width: 350px;
+            height: 415px;
+            background-color: #0C59D8;
+            position: absolute;
+            top: -100px;
+            left: 455px;
+            border-radius: 5px;
+            transition: 0.4s;
+            padding: 1px;
+        }
+
+        .c8:hover {
+            top: -120px;
+        }
+
+        .c9 {
+            width: 350px;
+            height: 415px;
+            background-color: #ffffff;
+            position: absolute;
+            top: -100px;
+            left: 835px;
+            transition: 0.4s;
+            border-radius: 5px;
+            padding: 1px;
+        }
+
+        .c9:hover {
+            top: -120px;
+            background-color: #0C59D8;
+        }
+
+        .c10 {
+            width: 130px;
+            height: 130px;
+            border-radius: 100%;
+            background-color: #EDF4FC;
+            margin-top: 50px;
+            margin-left: 110px;
+            padding: 1px;
+        }
+
+        .c11 {
+            margin-top: 20px;
+            text-align: center;
+            color: #232338;
+            transition: 0.4s;
+        }
+
+        .c7:hover .c11 {
+            color: white;
+        }
+
+        .c9:hover .c11 {
+            color: white;
+        }
+
+        .c12 {
+            text-align: center;
+            color: #616161;
+            transition: 0.4s;
+            margin-top: 20px;
+        }
+
+        .c7:hover .c12 {
+            color: white;
+        }
+
+        .c9:hover .c12 {
+            color: white;
+        }
+
+        .c13 {
+            text-align: center;
+            color: #616161;
+            transition: 0.4s;
+            margin-top: 7px;
+        }
+
+        .c7:hover .c13 {
+            color: white;
+        }
+
+        .c9:hover .c13 {
+            color: white;
+        }
+
+        .c14 {
+            text-align: center;
+            color: #0C59D8;
+            transition: 0.4s;
+            margin-top: 30px;
+            cursor: pointer;
+        }
+
+        .c7:hover .c14 {
+            color: white;
+        }
+
+        .c9:hover .c14 {
+            color: white;
+        }
+
+        .c111 {
+            margin-top: 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .c121 {
+            text-align: center;
+            color: #ffffff;
+            margin-top: 20px;
+        }
+
+        .c131 {
+            text-align: center;
+            color: #ffffff;
+            margin-top: 7px;
+        }
+
+        .c141 {
+            text-align: center;
+            color: #ffffff;
+            cursor: pointer;
+            margin-top: 30px;
+        }
+
+        .c110 {
+            margin-top: 10px;
+            margin-left: 13px;
+            border-radius: 100%;
+        }
+
+        .cc110 {
+            margin-top: 18px;
+            margin-left: 18px;
+            border-radius: 100%;
+        }
+
+        .ccc110 {
+            margin-top: 13px;
+            margin-left: 13px;
+            border-radius: 100%;
+        }
+
+        .d {
+            width: 100%;
+            height: 700px;
+            background-color: #ececec;
+            padding: 1px;
+        }
+
+        .d1 {
+            width: 540px;
+            margin-top: 80px;
+            margin-left: 75px;
+            position: relative;
+        }
+
+        .d2 {
+            color: #0C59D8;
+            font-weight: 600;
+            font-size: 140px;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 40px;
+            margin-top: 60px;
+        }
+
+        .d3 {
+            color: #232323;
+            display: inline-block;
+            vertical-align: top;
+            font-size: 38px;
+            margin-top: 80px;
+            margin-left: 10px;
+        }
+
+        .d4 {
+            color: #232323;
+            font-size: 38px;
+            margin-left: 830px;
+            margin-top: -490px;
+        }
+
+        .d5 {
+            color: #232323;
+            font-size: 38px;
+            margin-left: 830px;
+        }
+
+        .d6 {
+            width: 600px;
+            height: 300px;
+            margin-left: 660px;
+        }
+
+        .d7 {
+            color: #616161;
+            margin-top: 40px;
+            font-size: 18px;
+        }
+
+        .d8 {
+            color: #616161;
+            margin-top: 8px;
+            font-size: 18px;
+        }
+
+        .d9 {
+            width: 85px;
+            height: 85px;
+            border-radius: 100%;
+            position: absolute;
+            background-color: white;
+            top: 1710px;
+            left: 290px;
+            padding: 1px;
+
+        }
+
+        .d10 {
+            color: #0C59D8;
+            font-size: 28px;
+            margin-left: 32.5px;
+            margin-top: 28px;
+            position: absolute;
+        }
+
+        .e {
+            width: 85px;
+            height: 85px;
+            border-radius: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.900);
+            animation-name: e;
+            animation-timing-function: linear;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            transition: 0.5s;
+        }
+
+        @keyframes e {
+            0% {
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1);
+            }
+
+            100% {
+                opacity: 0;
+                transform: translate(-50%, -50%) scale(1.6);
+            }
+        }
+
+        .e1 {
+            width: 85px;
+            height: 85px;
+            border-radius: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.900);
+            animation-name: e1;
+            animation-timing-function: linear;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+            transition: 0.5s;
+        }
+
+        @keyframes e1 {
+            0% {
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1);
+            }
+
+            100% {
+                opacity: 0;
+                transform: translate(-50%, -50%) scale(1.6);
+            }
+        }
+
+        .e2 {
+            width: 85px;
+            height: 85px;
+            border-radius: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgb(255, 255, 255, 0.900);
+            animation-name: e2;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+            transition: 0.5s;
+        }
+
+        @keyframes e2 {
+            0% {
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1);
+            }
+
+            100% {
+                opacity: 0;
+                transform: translate(-50%, -50%) scale(1.6);
+
+            }
+        }
+
+        .e3 {
+            width: 170px;
+            height: 50px;
+            background-color: #0C59D8;
+            padding: 1px;
+            margin-left: 660px;
+            margin-top: -10px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 20px rgb(72, 71, 71);
+            cursor: pointer;
+
+        }
+
+        .e4 {
+            color: white;
+            margin-top: 13px;
+            margin-left: 30px;
+            font-weight: 100;
+        }
+
+        .e5 {
+            width: 100%;
+            height: 1150px;
+            background-color: #EFF2F7;
+            padding: 1px;
+        }
+
+        .e6 {
+            color: #0C59D8;
+            margin-top: 90px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .e7 {
+            text-align: center;
+            color: #232323;
+            font-weight: 600;
+            margin-top: 20px;
+            font-size: 42px;
+        }
+
+        .e8 {
+            text-align: center;
+            color: #232323;
+            font-weight: 600;
+            margin-top: 6px;
+            font-size: 42px;
+        }
+
+        .e9 {
+            width: 110px;
+            height: 20px;
+            padding: 1px;
+            margin-top: 20px;
+            margin-left: 580px;
+        }
+
+        .e10 {
+            width: 100px;
+            height: 5px;
+            background-color: #CBBDED;
+            margin-top: 7px;
+            margin-left: 4px;
+            border-radius: 5px;
+            position: relative;
+        }
+
+        .e11 {
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            position: absolute;
+            background-color: #0C59D8;
+            top: -2.5px;
+            animation-duration: 3s;
+            animation-name: e11;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes e11 {
+            0% {
+                top: -2.5px;
+                left: 0;
+            }
+
+            100% {
+                top: -2.5px;
+                left: 92%;
+            }
+        }
+
+        .f {
+            width: 360px;
+            height: 300px;
+            border: 1px solid #D5C7C7;
+            padding: 1px;
+            margin-top: 50px;
+            margin-left: 70px;
+            border-radius: 10px;
+            background-color: #EFF2F7;
+            transition: 0.4s;
+            display: inline-block;
+        }
+
+        .f:hover {
+            margin-top: 43px;
+            background-color: #0C59D8;
+        }
+
+        .f1 {
+            width: 360px;
+            height: 300px;
+            border: 1px solid #D5C7C7;
+            padding: 1px;
+            margin-top: 50px;
+            margin-left: 20px;
+            border-radius: 10px;
+            background-color: #EFF2F7;
+            display: inline-block;
+            vertical-align: top;
+            transition: 0.4s;
+        }
+
+        .f1:hover {
+            margin-top: 43px;
+            background-color: #0C59D8;
+        }
+
+        .f2 {
+            width: 360px;
+            height: 300px;
+            border: 1px solid #D5C7C7;
+            padding: 1px;
+            margin-top: 20px;
+            margin-left: 70px;
+            border-radius: 10px;
+            background-color: #EFF2F7;
+            display: inline-block;
+            transition: 0.4s;
+        }
+
+        .f2:hover {
+            margin-top: 13px;
+            background-color: #0C59D8;
+        }
+
+        .f3 {
+            width: 360px;
+            height: 300px;
+            border: 1px solid #D5C7C7;
+            padding: 1px;
+            margin-top: 20px;
+            margin-left: 20px;
+            border-radius: 10px;
+            background-color: #EFF2F7;
+            display: inline-block;
+            transition: 0.4s;
+            vertical-align: top;
+        }
+
+        .f3:hover {
+            margin-top: 13px;
+            background-color: #0C59D8;
+        }
+
+        .f4 {
+            color: #616161;
+            font-size: 41px;
+            margin-top: 35px;
+            transition: 0.4s;
+            margin-left: 25px;
+        }
+
+        .f:hover .f4 {
+            color: white;
+        }
+
+        .f1:hover .f4 {
+            color: white;
+        }
+
+        .f2:hover .f4 {
+            color: white;
+        }
+
+        .f3:hover .f4 {
+            color: white;
+        }
+
+        .f5 {
+            color: #232323;
+            margin-left: 25px;
+            margin-top: 30px;
+            font-weight: 600;
+            transition: 0.4s;
+            font-size: 22px;
+        }
+
+        .f6 {
+            color: #6A6A6B;
+            margin-top: 15px;
+            margin-left: 25px;
+            transition: 0.4s;
+            font-size: 17px;
+        }
+
+        .f7 {
+            color: #6A6A6B;
+            margin-top: 9px;
+            margin-left: 25px;
+            transition: 0.4s;
+            font-size: 17px;
+        }
+
+        .f8 {
+            color: #0C59D8;
+            transition: 0.4s;
+            margin-top: 20px;
+            margin-left: 25px;
+            cursor: pointer;
+            width: 110px;
+        }
+
+        .f:hover p {
+            color: white;
+        }
+
+        .f1:hover p {
+            color: white;
+        }
+
+        .f2:hover p {
+            color: white;
+        }
+
+        .f3:hover p {
+            color: white;
+        }
+
+        .g {
+            width: 100%;
+            height: 410px;
+            padding: 1px;
+            position: relative;
+        }
+
+        .g1 {
+            position: absolute;
+            width: 1120px;
+            height: 200px;
+            border-radius: 20px;
+            top: -100px;
+            left: 80px;
+            background-color: white;
+            box-shadow: 0px 0px 20px rgb(214, 210, 210);
+        }
+
+        .g2 {
+            width: 280px;
+            height: 100%;
+            padding: 1px;
+            display: inline-block;
+            margin-left: -4px;
+            vertical-align: top;
+        }
+
+        .g3 {
+            text-align: center;
+            margin-top: 58px;
+            font-weight: 600;
+            font-size: 40px;
+            color: #232323;
+        }
+
+        .g4 {
+            text-align: center;
+            margin-top: 10px;
+            color: #0C59D8;
+
+        }
+
+        .g5 {
+            width: 800px;
+            height: 300px;
+            padding: 1px;
+            margin-top: 100px;
+            margin-left: 240px;
+        }
+
+        .g6 {
+            width: 110px;
+            height: 20px;
+            padding: 1px;
+            margin-top: 20px;
+            margin-left: 343px;
+        }
+
+        .g77 {
+            width: 100%;
+            overflow: hidden;
+            height: 410px;
+        }
+
+
+        .g7 {
+            width: 200%;
+            height: 410px;
+            animation-name: g7;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            overflow: hidden;
+        }
+
+        @keyframes g7 {
+            0% {
+                margin-left: 0;
+            }
+
+            25% {
+                margin-left: 0;
+            }
+
+            50% {
+                margin-left: -100%;
+            }
+
+            75% {
+                margin-left: -100%;
+            }
+
+            100% {
+                margin-left: 0;
+            }
+        }
+
+        .g8 {
+            width: 12.5%;
+            height: 100%;
+            display: inline-block;
+            vertical-align: top;
+            padding: 1px;
+            position: relative;
+        }
+
+        .g9 {
+            width: 12.5%;
+            height: 100%;
+            display: inline-block;
+            vertical-align: top;
+            padding: 1px;
+            margin-left: -5px;
+            position: relative;
+        }
+
+        .img {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .g10 {
+            width: 100%;
+            height: 100%;
+            padding: 1px;
+            position: absolute;
+            background-color: #0c5ad8ce;
+            top: 0;
+            opacity: 0;
+            transition: 0.3s;
+        }
+
+        .g8:hover .g10 {
+            opacity: 1;
+        }
+
+        .g9:hover .g10 {
+            opacity: 1;
+        }
+
+        .g11 {
+            width: 80%;
+            height: 110px;
+            margin-left: 10%;
+            margin-top: 220px;
+            padding: 1px;
+            background-color: white;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .g8:hover .g11 {
+            margin-top: 150px;
+        }
+
+        .g9:hover .g11 {
+            margin-top: 150px;
+        }
+
+        .g12 {
+            text-align: center;
+            color: #232323;
+            margin-top: 32px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+
+        .g12:hover {
+            color: #0C59D8;
+        }
+
+        .g13 {
+            text-align: center;
+            margin-top: 10px;
+            color: #6A6A6B;
+        }
+
+        .h {
+            width: 100%;
+            height: 300px;
+            background-color: white;
+            padding: 1px;
+        }
+
+        .h1 {
+            width: 100px;
+            height: 20px;
+            padding: 1px;
+            margin-left: 585px;
+            margin-top: 40px;
+        }
+
+        .h2 {
+            width: 30px;
+            height: 6px;
+            background-color: #CCCCCC;
+            margin-top: 4px;
+            border-radius: 5px;
+            display: inline-block;
+            vertical-align: top;
+            cursor: pointer;
+        }
+
+        .h3 {
+            width: 40px;
+            height: 6px;
+            background-color: #0C59D8;
+            margin-top: 4px;
+            border-radius: 5px;
+            margin-left: 10px;
+            display: inline-block;
+            vertical-align: top;
+            cursor: pointer;
+        }
+
+        .h4 {
+            width: 110px;
+            height: 20px;
+            padding: 1px;
+            margin-top: 20px;
+            margin-left: 580px;
+        }
+
+        .h5 {
+            width: 100%;
+            height: 510px;
+            background-color: white;
+        }
+
+        .h6 {
+            width: 290px;
+            height: 360px;
+            background-color: white;
+            display: inline-block;
+            vertical-align: top;
+            padding: 1px;
+            margin-left: 80px;
+            position: relative;
+            margin-top: 20px;
+        }
+
+        .h7 {
+            width: 290px;
+            height: 360px;
+            background-color: white;
+            display: inline-block;
+            vertical-align: top;
+            padding: 1px;
+            margin-left: -5px;
+            position: relative;
+            margin-top: 20px;
+        }
+
+        .h8 {
+            width: 240px;
+            height: 240px;
+            border-radius: 100%;
+            background-color: #3D7BE2;
+            padding: 5px;
+            animation-name: h8;
+            animation-duration: 2.6s;
+            animation-delay: 0.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+
+        }
+
+        @keyframes h8 {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.04);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .h9 {
+            width: 230px;
+            height: 230px;
+            border-radius: 100%;
+            background-color: #ffffff;
+            padding: 10px;
+            position: absolute;
+            top: 6px;
+            left: 6px;
+
+        }
+
+        .h10 {
+            width: 210px;
+            height: 210px;
+            border-radius: 100%;
+        }
+
+        .h11 {
+            width: 55px;
+            height: 55px;
+            border-radius: 100%;
+            position: absolute;
+            padding: 14px;
+            background-color: #0C5ADB;
+            left: 92.5px;
+            top: 200px;
+            transition: 0.6s;
+        }
+
+        .h6:hover .h11 {
+            left: 92.5px;
+            top: 130px;
+        }
+
+        .h7:hover .h11 {
+            left: 92.5px;
+            top: 130px;
+        }
+
+        .i {
+            margin-left: 6px;
+            color: white;
+        }
+
+        .i1 {
+            font-size: 24px;
+            margin-left: 30px;
+            margin-top: 30px;
+            color: #232323;
+        }
+
+        .i11 {
+            font-size: 24px;
+            margin-left: 40px;
+            margin-top: 30px;
+            color: #232323;
+        }
+
+        .i2 {
+            margin-top: 8px;
+            color: #858585;
+        }
+
+        .i3 {
+            margin-top: 8px;
+            color: #858585;
+            margin-left: 10px;
+        }
+
+        .i4 {
+            width: 100%;
+            height: 750px;
+            background-position: center;
+            background-size: cover;
+            background: fixed;
+            background-image: url(image/slider-8.jpg);
+            overflow: hidden;
+        }
+
+        .i5 {
+            width: 100%;
+            height: 300px;
+            padding: 1px;
+
+        }
+
+        .e66 {
+            color: #ffffff;
+            margin-top: 90px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .e77 {
+            text-align: center;
+            color: #ffffff;
+            font-weight: 600;
+            margin-top: 20px;
+            font-size: 42px;
+        }
+
+        .e88 {
+            text-align: center;
+            color: #ffffff;
+            font-weight: 600;
+            margin-top: 6px;
+            font-size: 42px;
+        }
+
+        .g66 {
+            width: 110px;
+            height: 20px;
+            padding: 1px;
+            margin-top: 20px;
+            margin-left: 580px;
+        }
+
+        .i6 {
+            width: 200%;
+            height: 400px;
+            animation-duration: 15s;
+            animation-name: i6;
+            animation-iteration-count: infinite;
+            overflow: hidden;
+        }
+
+        @keyframes i6 {
+            0% {
+                margin-left: 0;
+            }
+
+            10% {
+                margin-left: 0;
+            }
+
+            12% {
+                margin-left: -33.32%;
+            }
+
+            40% {
+                margin-left: -33.32%;
+            }
+
+            42% {
+                margin-left: -66.64%;
+            }
+
+            73% {
+                margin-left: -66.64%;
+            }
+
+            75% {
+                margin-left: -99.9%;
+            }
+
+            100% {
+                margin-left: -99.8%;
+            }
+
+
+
+        }
+
+        .i7 {
+            width: 16.66%;
+            height: 100%;
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .i8 {
+            width: 16.66%;
+            height: 100%;
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: -5px;
+        }
+
+        .i9 {
+            width: 350px;
+            height: 210px;
+            background-color: white;
+            margin-left: 34px;
+            padding: 1px;
+            position: relative;
+        }
+
+        .i10 {
+            text-align: center;
+            margin-top: 40px;
+            color: #616161;
+        }
+
+        .i100 {
+            text-align: center;
+            margin-top: 10px;
+            color: #616161;
+        }
+
+        .i12 {
+            margin-left: 33px;
+            margin-top: 10px;
+            color: #616161;
+        }
+
+        .i13 {
+            font-size: 40px;
+            color: rgb(255, 255, 255);
+            top: 187px;
+            left: -0px;
+            position: absolute;
+        }
+
+        .j {
+            width: 90px;
+            height: 90px;
+            border-radius: 100%;
+            margin-top: 35px;
+            margin-left: 30px;
+
+
+        }
+
+        .j1 {
+            color: white;
+            display: inline-block;
+            margin-top: 35px;
+            vertical-align: top;
+            font-size: 22px;
+            margin-left: 10px;
+        }
+
+        .j2 {
+            color: white;
+            margin-left: 135px;
+            margin-top: -60px;
+
+        }
+
+        .j3 {
+            width: 100%;
+            height: 800px;
+            padding: 1px;
+            background-color: white;
+        }
+
+        .j4 {
+            width: 50%;
+            height: 100%;
+            padding: 1px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .j5 {
+            width: 87%;
+            margin-top: 100px;
+            margin-left: 70px;
+        }
+
+        .j6 {
+            width: 49%;
+            height: 100%;
+            padding: 1px;
+            vertical-align: top;
+            display: inline-block;
+        }
+
+        .j7 {
+            color: #0C5ADB;
+            margin-top: 170px;
+            margin-left: 10px;
+            font-weight: 600;
+        }
+
+        .j8 {
+            margin-left: 10px;
+            margin-top: 20px;
+            color: #232323;
+            font-size: 42px;
+            font-weight: 700;
+        }
+
+        .j9 {
+            margin-left: 10px;
+            margin-top: 3px;
+            color: #232323;
+            font-size: 42px;
+            font-weight: 700;
+        }
+
+        .j10 {
+            width: 110px;
+            height: 20px;
+            padding: 1px;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+
+        .j11 {
+            color: #616161;
+            margin-top: 20px;
+            margin-left: 10px;
+            font-size: 18px;
+        }
+
+        .j12 {
+            color: #616161;
+            margin-top: 5px;
+            margin-left: 10px;
+            font-size: 18px;
+        }
+
+        .j13 {
+            color: #232323;
+            margin-top: 50px;
+            margin-left: 10px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .j113 {
+            color: #232323;
+            margin-top: 25px;
+            margin-left: 10px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .j14 {
+            width: 500px;
+            height: 15px;
+            border-radius: 4px;
+            background-color: #E9ECEF;
+            margin-top: 10px;
+            margin-left: 10px;
+            overflow: hidden;
+        }
+
+        .j15 {
+            width: 500px;
+            height: 15px;
+            background-color: #007BFF;
+            margin-left: -40px;
+        }
+
+        .j115 {
+            width: 500px;
+            height: 15px;
+            background-color: #007BFF;
+            margin-left: -60px;
+        }
+
+        .j1115 {
+            width: 500px;
+            height: 15px;
+            background-color: #007BFF;
+            margin-left: -80px;
+        }
+
+        .j16 {
+            color: rgb(255, 255, 255);
+            margin-left: 270px;
+            margin-top: -1px;
+        }
+
+        .k {
+            width: 100%;
+            height: 1000px;
+            background-color: #EFF2F7;
+            padding: 1px;
+        }
+
+        .kk {
+            width: 100%;
+            height: 340px;
+            padding: 1px;
+        }
+
+        .k1 {
+            width: 350px;
+            height: 200px;
+            margin-top: 100px;
+            margin-left: 60px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .k2 {
+            color: #0C5ADB;
+            margin-left: 10px;
+            font-weight: 600;
+        }
+
+        .k3 {
+            width: 170px;
+            height: 55px;
+            background-color: #0C59D8;
+            border-radius: 5px;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 150px;
+            margin-left: 590px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .k4 {
+            color: white;
+            margin-left: 27px;
+            margin-top: 19px;
+            font-size: large;
+            /* z-index: 10; */
+            position: relative;
+        }
+
+        .k5 {
+            width: 200px;
+            height: 200px;
+            background-color: #00247E;
+            position: absolute;
+            top: 20%;
+            left: -110%;
+            border-radius: 5px;
+            transform: rotate(-40deg);
+            transition: 0.5s;
+        }
+
+        .k3:hover .k5 {
+            top: -50px;
+            left: 0;
+        }
+
+        .k6 {
+            width: 350px;
+            height: 550px;
+            background-color: white;
+            margin-left: 75px;
+            display: inline-block;
+            transition: 0.4s;
+            vertical-align: top;
+        }
+
+        .k6:hover {
+            box-shadow: 0px 0px 15px rgb(155, 154, 154);
+        }
+
+        .k7 {
+            width: 350px;
+            height: 550px;
+            background-color: white;
+            margin-left: 30px;
+            display: inline-block;
+            transition: 0.4s;
+            vertical-align: top;
+        }
+
+        .k7:hover {
+            box-shadow: 0px 0px 15px rgb(155, 154, 154);
+        }
+
+        .k8 {
+            width: 100%;
+        }
+
+        .k9 {
+            color: #616161;
+            margin-top: 25px;
+            margin-left: 25px;
+            transition: 0.4s;
+            cursor: pointer;
+        }
+
+        .k9:hover {
+            color: #0C59D8;
+        }
+
+        .k10 {
+            width: 1px;
+            height: 15px;
+            background-color: #616161;
+            margin-left: 88px;
+            margin-top: -17px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .k11 {
+            color: #616161;
+            margin-top: -19px;
+            margin-left: 8px;
+            display: inline-block;
+            vertical-align: top;
+
+        }
+
+        .l {
+            color: #232323;
+            margin-left: 25px;
+            font-size: 20px;
+            transition: 0.4s;
+            cursor: pointer;
+        }
+
+        .l:hover {
+            color: #0C59D8;
+        }
+
+        .l1 {
+            color: #232323;
+            margin-left: 25px;
+            font-size: 20px;
+            transition: 0.4s;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+
+        .l1:hover {
+            color: #0C59D8;
+        }
+
+        .l2 {
+            color: #616161;
+            margin-top: 13px;
+            margin-left: 25px;
+        }
+
+        .l3 {
+            color: #616161;
+            margin-top: 7px;
+            margin-left: 25px;
+        }
+
+        .l4 {
+            color: #616161;
+            transition: 0.4s;
+            margin-top: 30px;
+            margin-left: 25px;
+            cursor: pointer;
+            width: 110px;
+        }
+
+        .l4:hover {
+            color: #0C59D8;
+        }
+
+        .l5 {
+            width: 100%;
+            height: 230px;
+            padding: 1px;
+            background-color: #0C59D8;
+        }
+
+        .l6 {
+            text-align: center;
+            color: white;
+            margin-top: 40px;
+        }
+
+        .l7 {
+            width: 750px;
+            height: 65px;
+            border-radius: 20px;
+            margin-top: 30px;
+            margin-left: 260px;
+            background-color: white;
+            border: none;
+            padding-left: 20px;
+        }
+
+        .l8 {
+            width: 100%;
+            height: 540px;
+            background-color: #111A3A;
+            background-image: url(./image/call-bg.png);
+            padding: 1px;
+        }
+
+        .l9 {
+            width: 270px;
+            height: 320px;
+            padding: 1px;
+            margin-top: 90px;
+            margin-left: 70px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .l10 {
+            width: 210px;
+            height: 320px;
+            display: inline-block;
+            vertical-align: top;
+            padding: 1px;
+            margin-top: 90px;
+            margin-left: 10px;
+
+        }
+
+        .l11 {
+            width: 270px;
+            height: 320px;
+            padding: 1px;
+            margin-top: 90px;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 15px;
+        }
+
+        .m {
+            color: white;
+            margin-top: 40px;
+        }
+
+        .m1 {
+            color: white;
+            margin-top: 9px;
+        }
+
+        .m2 {
+            color: white;
+            margin-top: 40px;
+            display: inline-block;
+        }
+
+        .m3 {
+            color: white;
+            font-size: 24px;
+            margin-top: 5px;
+        }
+
+        .m4 {
+            width: 15px;
+            height: 1.5px;
+            background-color: white;
+            margin-top: 40px;
+        }
+
+        .m5 {
+            margin-left: 10px;
+            width: 136px;
+            color: white;
+            margin-top: -10px;
+            margin-left: 30px;
+            transition: 0.7s;
+            cursor: pointer;
+        }
+
+        .m5:hover {
+            color: #0C59D8;
+
+        }
+
+        .m6 {
+            width: 15px;
+            height: 1.5px;
+            background-color: white;
+            margin-top: 27px;
+        }
+
+        .m7 {
+            color: white;
+            margin-top: 30px;
+        }
+
+        .m8 {
+            color: white;
+            margin-top: 20px;
+        }
+
+        .m9 {
+            color: white;
+            margin-top: 25px;
+        }
+
+        .m10 {
+            width: 80px;
+            margin-top: 42px;
+        }
+
+        .m11 {
+            width: 130px;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 42px;
+            color: white;
+            margin-left: 10px;
+            font-weight: 100;
+            font-size: 19px;
+            cursor: pointer;
+            transition: 0.7s;
+        }
+
+        .m11:hover {
+            color: #0C59D8;
+        }
+
+        .m12 {
+            color: #ADB0BE;
+            margin-top: -9px;
+            margin-left: 95px;
+        }
+
+        .m13 {
+            width: 260px;
+            height: 1px;
+            background-color: #ADB0BE;
+            margin-top: 21px;
+        }
+
+        .m101 {
+            width: 80px;
+            margin-top: 30px;
+        }
+
+        .m111 {
+            width: 150px;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 30px;
+            color: white;
+            margin-left: 10px;
+            font-weight: 100;
+            font-size: 19px;
+            cursor: pointer;
+            transition: 0.7s;
+        }
+
+        .m111:hover {
+            color: #0C59D8;
+        }
+
+        .m121 {
+            color: #ADB0BE;
+            margin-top: -29px;
+            margin-left: 95px;
+        }
+
+        .n {
+            width: 1120px;
+            height: 0.7px;
+            background-color: #656565;
+            margin-top: 65px;
+            margin-left: 70px;
+        }
+
+        .n1 {
+            color: white;
+            margin-top: 20px;
+            margin-left: 85px;
+            display: inline-block;
+        }
+
+        .n2 {
+            color: white;
+            display: inline-block;
+            margin-left: 560px;
+        }
+
+        .n3 {
+            width: 1px;
+            height: 15px;
+            display: inline-block;
+            background-color: white;
+            transform: rotate(15deg);
+            margin-left: 10px;
+            margin-top: 22px;
+            vertical-align: top;
+        }
+
+        .n4 {
+            color: white;
+            margin-top: 20px;
+            margin-left: 10px;
+            display: inline-block;
+            vertical-align: top;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="a4">
+        <p class="a5"><i class="fa-regular fa-envelope a6"></i>example@gmail.com</p>
+        <p class="a7"><i class="fa-solid fa-location-dot a6"></i>24/5, 1st Floor, Kurigram</p>
+        <p class="a7"><i class="fa-solid fa-phone a6"></i>+ (1800) 456 7890</p>
+        <div class="a8"><i class="fa-brands fa-facebook-f"></i></div>
+        <div class="a9"><i class="fa-brands fa-x-twitter"></i></div>
+        <div class="a9"><i class="fa-brands fa-pinterest"></i></div>
+        <div class="a9"><i class="fa-brands fa-linkedin-in"></i></div>
+    </div>
+    <div class="a10">
+        <img class="b" src="./image/logo (1).png" alt="">
+        <div class="b1">
+            <ul>
+                <li>Home
+                    <div class="li1">
+                        <div class="lii">
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+
+
+                        </div>
+                        <div class="lii1">
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+
+                        </div>
+                        <div class="lii1">
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+
+                        </div>
+                        <div class="lii1">
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>Company
+                    <div class="li2">
+                        <div class="liii">
+                            <div class="overflow"></div>
+                            <p class="let">Let Skill</p>
+                        </div>
+                        <div class="liii">
+                            <div class="overflow"></div>
+                            <p class="let">Let Skill</p>
+                        </div>
+                        <div class="liii">
+                            <div class="overflow"></div>
+                            <p class="let">Let Skill</p>
+                        </div>
+                        <div class="liii">
+                            <div class="overflow"></div>
+                            <p class="let">Let Skill</p>
+                        </div>
+                        <div class="liii">
+                            <div class="overflow"></div>
+                            <p class="let">Let Skill</p>
+                        </div>
+                        <div class="liii">
+                            <div class="overflow"></div>
+                            <p class="let">Let Skill</p>
+                        </div>
+                        <div class="liii">
+                            <div class="overflow"></div>
+                            <p class="let">Let Skill</p>
+                        </div>
+                        <div class="liii">
+                            <div class="overflow"></div>
+                            <p class="let">Let Skill</p>
+                        </div>
+                        <div class="liii">
+                            <div class="overflow"></div>
+                            <p class="let">Let Skill</p>
+                        </div>
+                    </div>
+                </li>
+                <li>Service
+                    <div class="li3">
+                        <div class="liii">
+                            <div class="overflow"></div>
+                            <p class="let">Let Skill</p>
+                        </div>
+                        <div class="liii">
+                            <div class="overflow"></div>
+                            <p class="let">Let Skill</p>
+                        </div>
+                        <div class="liii">
+                            <div class="overflow"></div>
+                            <p class="let">Let Skill</p>
+                        </div>
+                        <div class="liii">
+                            <div class="overflow"></div>
+                            <p class="let">Let Skill</p>
+                        </div>
+                        <div class="liii">
+                            <div class="overflow"></div>
+                            <p class="let">Let Skill</p>
+                        </div>
+                        <div class="liii">
+                            <div class="overflow"></div>
+                            <p class="let">Let Skill</p>
+                        </div>
+                        <div class="liii">
+                            <div class="overflow"></div>
+                            <p class="let">Let Skill</p>
+                        </div>
+
+                    </div>
+                </li>
+                <li>It Solution
+                    <div class="li3">
+                        <div class="liii">
+                            <div class="overflow"></div>
+                            <p class="let">Let Skill</p>
+                        </div>
+                        <div class="liii">
+                            <div class="overflow"></div>
+                            <p class="let">Let Skill</p>
+                        </div>
+                        <div class="liii">
+                            <div class="overflow"></div>
+                            <p class="let">Let Skill</p>
+                        </div>
+                        <div class="liii">
+                            <div class="overflow"></div>
+                            <p class="let">Let Skill</p>
+                        </div>
+                        <div class="liii">
+                            <div class="overflow"></div>
+                            <p class="let">Let Skill</p>
+                        </div>
+                        <div class="liii">
+                            <div class="overflow"></div>
+                            <p class="let">Let Skill</p>
+                        </div>
+                        <div class="liii">
+                            <div class="overflow"></div>
+                            <p class="let">Let Skill</p>
+                        </div>
+                    </div>
+                </li>
+                <li>Element
+                    <div class="li1">
+                        <div class="lii">
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+
+                        </div>
+                        <div class="lii1">
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+
+                        </div>
+                        <div class="lii1">
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+
+                        </div>
+                        <div class="lii1">
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                            <div class="liii">
+                                <div class="overflow"></div>
+                                <p class="let">Let Skill</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>Blog
+                    <div class="li2">
+                        <div class="liii">
+                            <div class="overflow"></div>
+                            <p class="let">Let Skill</p>
+                        </div>
+                        <div class="liii">
+                            <div class="overflow"></div>
+                            <p class="let">Let Skill</p>
+                        </div>
+                        <div class="liii">
+                            <div class="overflow"></div>
+                            <p class="let">Let Skill</p>
+                        </div>
+                        <div class="liii">
+                            <div class="overflow"></div>
+                            <p class="let">Let Skill</p>
+                        </div>
+                        <div class="liii">
+                            <div class="overflow"></div>
+                            <p class="let">Let Skill</p>
+                        </div>
+                        <div class="liii">
+                            <div class="overflow"></div>
+                            <p class="let">Let Skill</p>
+                        </div>
+                        <div class="liii">
+                            <div class="overflow"></div>
+                            <p class="let">Let Skill</p>
+                        </div>
+                        <div class="liii">
+                            <div class="overflow"></div>
+                            <p class="let">Let Skill</p>
+                        </div>
+                        <div class="liii">
+                            <div class="overflow"></div>
+                            <p class="let">Let Skill</p>
+                        </div>
+                    </div>
+
+                </li>
+                <li>Contact
+                    <div class="li3">
+                        <div class="liii">
+                            <div class="overflow"></div>
+                            <p class="let">Let Skill</p>
+                        </div>
+                        <div class="liii">
+                            <div class="overflow"></div>
+                            <p class="let">Let Skill</p>
+                        </div>
+                        <div class="liii">
+                            <div class="overflow"></div>
+                            <p class="let">Let Skill</p>
+                        </div>
+                        <div class="liii">
+                            <div class="overflow"></div>
+                            <p class="let">Let Skill</p>
+                        </div>
+                        <div class="liii">
+                            <div class="overflow"></div>
+                            <p class="let">Let Skill</p>
+                        </div>
+                        <div class="liii">
+                            <div class="overflow"></div>
+                            <p class="let">Let Skill</p>
+                        </div>
+                        <div class="liii">
+                            <div class="overflow"></div>
+                            <p class="let">Let Skill</p>
+                        </div>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+        <div class="b2">
+            <p class="b3">Get A Quote</p>
+            <div class="b4"></div>
+            <div class="b5"></div>
+        </div>
+    </div>
+    <div class="background">
+        <p class="b6">IT SOLUTION COMPANY</p>
+        <div class="b7">
+            <div class="b77">
+                <p class="b8">SOIUTION FOR COMPANY</p>
+                <p class="b9"> PROVIDE All IT SERVICE</p>
+                <p class="b10">HOSTING SERVICES</p>
+                <p class="b11">DIGITAL MARKETING SERVICE
+                <p>
+            </div>
+        </div>
+        <p class="c">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+        <p class="c1">incididunt ut laboret dolore magna aliqua. Ut en ad minim ullamco laboris nisi ut</p>
+        <p class="c1">aliquip for best company services.</p>
+        <div class="c2">
+            <p class="c3">About Us<i class="fa-solid fa-arrow-right-long c4"></i></p>
+        </div>
+        <div class="c5">
+            <p class="c3">How IT Work<i class="fa-solid fa-arrow-right-long c4"></i></p>
+        </div>
+
+
+
+    </div>
+    <div class="c6">
+        <div class="c7">
+            <div class="c10">
+                <img class="ccc110" src="./image/Screenshot (10) - Copy.png" alt="">
+            </div>
+            <h2 class="c11">Product Engineering</h2>
+            <p class="c12">We have the expertise to help you</p>
+            <p class="c13">define a game plan, design the</p>
+            <p class="c13">products customers want.</p>
+            <p class="c14">Read More<i class="fa-solid fa-arrow-right-long c4"></i></p>
+            </p>
+        </div>
+        <div class="c8">
+            <div class="c10">
+                <img class="cc110" src="./image/Screenshot (9).png" alt="">
+            </div>
+            <h2 class="c111">Digital Services</h2>
+            <p class="c121">We have the expertise to help you</p>
+            <p class="c131">define a game plan, design the</p>
+            <p class="c131">products customers want.</p>
+            <p class="c141">Read More<i class="fa-solid fa-arrow-right-long c4"></i></p>
+            </p>
+        </div>
+        <div class="c9">
+            <div class="c10">
+                <img class="c110" src="./image/Screenshot (9) - Copy.png" alt="">
+            </div>
+            <h2 class="c11">IT Consultancy</h2>
+            <p class="c12">We have the expertise to help you</p>
+            <p class="c13">define a game plan, design the</p>
+            <p class="c13">products customers want.</p>
+            <p class="c14">Read More<i class="fa-solid fa-arrow-right-long c4"></i></p>
+            </p>
+        </div>
+    </div>
+    <div class="d">
+        <img class="d1" src="./image/about-video-img2.png" alt="">
+        <div class="d9">
+            <div class="e"></div>
+            <div class="e1"></div>
+            <div class="e2"></div>
+            <i class="fa-solid fa-play d10"></i>
+        </div>
+        <h1 class="d2">26</h1>
+        <h1 class="d3">Years of experience</h1>
+        <h1 class="d4">in IT Solution &</h1>
+        <h1 class="d5">Business</h1>
+        <div class="d6">
+            <p class="d7">There are many variations of passages of Ipsum available, but</p>
+            <p class="d8">the majority have suffered alteration in some form, by injected</p>
+            <p class="d8">humour, or randomised words which don't look even slightly</p>
+            <p class="d8">believable. If you are going to use a passage of Lorem Ipsum, you</p>
+            <p class="d8">need to be sure there isn't anything embarrassing</p>
+            <p class="d7">There are many variations of passages of Lorem Ipsum</p>
+            <p class="d8">available, but the majority have suffered alteration in some form,</p>
+            <p class="d8">by injected humour, or randomised words</p>
+
+        </div>
+        <div class="e3">
+            <h3 class="e4">More Details</h3>
+        </div>
+
+    </div>
+    <div class="e5">
+        <p class="e6">OUR SERVICES</p>
+        <h1 class="e7">We Run All Kinds Of IT Services</h1>
+        <h1 class="e8">With 20 Years Of Experience</h1>
+        <div class="e9">
+            <div class="e10">
+                <div class="e11"></div>
+            </div>
+        </div>
+        <div class="f">
+            <i class="fa-solid fa-tachograph-digital f4"></i>
+            <p class="f5">Digital Services</p>
+            <p class="f6">Digital solutions have transformed the</p>
+            <p class="f7">world’s customer expectations and the</p>
+            <p class="f7">profitable growths.</p>
+            <p class="f8">Read More<i class="fa-solid fa-arrow-right-long c4"></i></p>
+            </p>
+
+        </div>
+        <div class="f1">
+            <i class="fa-solid fa-laptop-code f4"></i>
+            <p class="f5">Product Development</p>
+            <p class="f6">Digital solutions have transformed the</p>
+            <p class="f7">world’s customer expectations and the</p>
+            <p class="f7">profitable growths.</p>
+            <p class="f8">Read More<i class="fa-solid fa-arrow-right-long c4"></i></p>
+            </p>
+        </div>
+        <div class="f1">
+            <i class="fa-brands fa-wpbeginner f4"></i>
+            <p class="f5">Content Engineering</p>
+            <p class="f6">Digital solutions have transformed the</p>
+            <p class="f7">world’s customer expectations and the</p>
+            <p class="f7">profitable growths.</p>
+            <p class="f8">Read More<i class="fa-solid fa-arrow-right-long c4"></i></p>
+            </p>
+        </div>
+        <div class="f2">
+            <i class="fa-solid fa-lightbulb f4"></i>
+            <p class="f5">Experienced Design</p>
+            <p class="f6">Digital solutions have transformed the</p>
+            <p class="f7">world’s customer expectations and the</p>
+            <p class="f7">profitable growths.</p>
+            <p class="f8">Read More<i class="fa-solid fa-arrow-right-long c4"></i></p>
+            </p>
+        </div>
+        <div class="f3">
+            <i class="fa-solid fa-network-wired f4"></i>
+            <p class="f5">Advisory Services</p>
+            <p class="f6">Digital solutions have transformed the</p>
+            <p class="f7">world’s customer expectations and the</p>
+            <p class="f7">profitable growths.</p>
+            <p class="f8">Read More<i class="fa-solid fa-arrow-right-long c4"></i></p>
+            </p>
+        </div>
+        <div class="f3">
+            <i class="fa-solid fa-database f4"></i>
+            <p class="f5">Data Structuring</p>
+            <p class="f6">Digital solutions have transformed the</p>
+            <p class="f7">world’s customer expectations and the</p>
+            <p class="f7">profitable growths.</p>
+            <p class="f8">Read More<i class="fa-solid fa-arrow-right-long c4"></i></p>
+            </p>
+        </div>
+    </div>
+    <div class="g">
+        <div class="g1">
+            <div class="g2">
+                <h1 class="g3">15K</h1>
+                <h3 class="g4">Happy Clients</h3>
+            </div>
+            <div class="g2">
+                <h1 class="g3">1280+</h1>
+                <h3 class="g4">Account Number</h3>
+            </div>
+            <div class="g2">
+                <h1 class="g3">10K</h1>
+                <h3 class="g4">Finished Projects</h3>
+            </div>
+            <div class="g2">
+                <h1 class="g3">992+</h1>
+                <h3 class="g4">Win Awards</h3>
+            </div>
+
+        </div>
+        <div class="g5">
+            <p class="e6">FEATURES CASE</p>
+            <h1 class="e7">Our Latest Case Study</h1>
+            <h1 class="e8">For Your Business</h1>
+            <div class="g6">
+                <div class="e10">
+                    <div class="e11"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="g77">
+        <div class="g7">
+            <div class="g8">
+                <img class="img" src="./image/2 (1).jpg" alt="">
+                <div class="g10">
+                    <div class="g11">
+                        <p class="g12">Web Design</p>
+                        <p class="g13">Design,Photoshop</p>
+                    </div>
+                </div>
+            </div>
+            <div class="g9">
+                <img class="img" src="image/1 (1).jpg" alt="">
+                <div class="g10">
+                    <div class="g11">
+                        <p class="g12">Solution For Financial</p>
+                        <p class="g13">IT Server</p>
+                    </div>
+                </div>
+            </div>
+            <div class="g9">
+                <img class="img" src="image/8.jpg" alt="">
+                <div class="g10">
+                    <div class="g11">
+                        <p class="g12">Solution For Financial</p>
+                        <p class="g13">IT Server</p>
+                    </div>
+                </div>
+            </div>
+            <div class="g9">
+                <img class="img" src="image/3 (1).jpg" alt="">
+                <div class="g10">
+                    <div class="g11">
+                        <p class="g12">Crazy Mood</p>
+                        <p class="g13">IT Solution</p>
+                    </div>
+                </div>
+            </div>
+            <div class="g9">
+                <img class="img" src="image/4 (1).jpg" alt="">
+                <div class="g10">
+                    <div class="g11">
+                        <p class="g12">Logo Branding</p>
+                        <p class="g13">Branding</p>
+                    </div>
+                </div>
+            </div>
+            <div class="g9">
+                <img class="img" src="image/5 (1).jpg" alt="">
+                <div class="g10">
+                    <div class="g11">
+                        <p class="g12">Web Design</p>
+                        <p class="g13">Design,Photoshop</p>
+                    </div>
+                </div>
+            </div>
+            <div class="g9">
+                <img class="img" src="image/6 (1).jpg" alt="">
+                <div class="g10">
+                    <div class="g11">
+                        <p class="g12">Digital Marketing</p>
+                        <p class="g13">Business</p>
+                    </div>
+                </div>
+            </div>
+            <div class="g9">
+                <img class="img" src="image/7.jpg" alt="">
+                <div class="g10">
+                    <div class="g11">
+                        <p class="g12">Photoshop Designer</p>
+                        <p class="g13">Photography</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="h">
+        <div class="h1">
+            <div class="h2"></div>
+            <div class="h3"></div>
+        </div>
+        <p class="e6">PROCESS</p>
+        <h1 class="e7">Our Working Process</h1>
+        <div class="h4">
+            <div class="e10">
+                <div class="e11"></div>
+            </div>
+        </div>
+    </div>
+    <div class="h5">
+        <div class="h6">
+            <div class="h8"></div>
+            <div class="h9">
+                <img class="h10" src="image/process1.jpg" alt="">
+            </div>
+            <div class="h11">
+                <h2 class="i">1</h2>
+            </div>
+            <h2 class="i1">Select A Project</h2>
+            <p class="i2">Select project this is my company</p>
+            <p class="i3">sit concept tour adipisicing elit.</p>
+        </div>
+        <div class="h7">
+            <div class="h8"></div>
+            <div class="h9">
+                <img class="h10" src="image/process2.jpg" alt="">
+            </div>
+            <div class="h11">
+                <h2 class="i">2</h2>
+            </div>
+            <h2 class="i1">Online Marketing</h2>
+            <p class="i2">Select project this is my company</p>
+            <p class="i3">sit concept tour adipisicing elit.</p>
+        </div>
+        <div class="h7">
+            <div class="h8"></div>
+            <div class="h9">
+                <img class="h10" src="image/process3.jpg" alt="">
+            </div>
+            <div class="h11">
+                <h2 class="i">3</h2>
+            </div>
+            <h2 class="i11">Solution Mean</h2>
+            <p class="i2">Select project this is my company</p>
+            <p class="i3">sit concept tour adipisicing elit.</p>
+        </div>
+        <div class="h7">
+            <div class="h8"></div>
+            <div class="h9">
+                <img class="h10" src="image/process4.jpg" alt="">
+            </div>
+            <div class="h11">
+                <h2 class="i">4</h2>
+            </div>
+            <h2 class="i1">Creative Project</h2>
+            <p class="i2">Select project this is my company</p>
+            <p class="i3">sit concept tour adipisicing elit.</p>
+        </div>
+    </div>
+    <div class="i4">
+        <div class="i5">
+            <p class="e66">PROCESS</p>
+            <h1 class="e77">What Says</h1>
+            <h1 class="e88">Our Happy Clients</h1>
+            <div class="g66">
+                <div class="e10">
+                    <div class="e11"></div>
+                </div>
+            </div>
+        </div>
+        <div class="i6">
+            <div class="i7">
+                <div class="i9">
+                    <p class="i10">Lorem ipsum dolor sit amet consectetur.</p>
+                    <p class="i100">Lorem ipsum dolor sit amet consectetur.</p>
+                    <p class="i100">Lorem ipsum dolor sit amet consectetur.</p>
+                    <p class="i100">Lorem ipsum dolor sit amet consectetur.</p>
+                    <p class="i12">Lorem ipsum .</p>
+                    <i class="fa-solid fa-play i13"></i>
+                </div>
+                <img class="j" src="image/testi1.jpg" alt="">
+                <h3 class="j1">Jamal Vuiyan</h3>
+                <p class="j2">Founder</p>
+            </div>
+            <div class="i8">
+                <div class="i9">
+                    <p class="i10">Lorem ipsum dolor sit amet consectetur.</p>
+                    <p class="i100">Lorem ipsum dolor sit amet consectetur.</p>
+                    <p class="i100">Lorem ipsum dolor sit amet consectetur.</p>
+                    <p class="i100">Lorem ipsum dolor sit amet consectetur.</p>
+                    <p class="i12">Lorem ipsum .</p>
+                    <i class="fa-solid fa-play i13"></i>
+                </div>
+                <img class="j" src="image/testi2.jpg" alt="">
+                <h3 class="j1">Isral Jahan</h3>
+                <p class="j2">Developer</p>
+            </div>
+            <div class="i8">
+                <div class="i9">
+                    <p class="i10">Lorem ipsum dolor sit amet consectetur.</p>
+                    <p class="i100">Lorem ipsum dolor sit amet consectetur.</p>
+                    <p class="i100">Lorem ipsum dolor sit amet consectetur.</p>
+                    <p class="i100">Lorem ipsum dolor sit amet consectetur.</p>
+                    <p class="i12">Lorem ipsum .</p>
+                    <i class="fa-solid fa-play i13"></i>
+                </div>
+                <img class="j" src="image/testi3.jpg" alt="">
+                <h3 class="j1">Abrham Khan</h3>
+                <p class="j2">IT Manager</p>
+            </div>
+            <div class="i8">
+                <div class="i9">
+                    <p class="i10">Lorem ipsum dolor sit amet consectetur.</p>
+                    <p class="i100">Lorem ipsum dolor sit amet consectetur.</p>
+                    <p class="i100">Lorem ipsum dolor sit amet consectetur.</p>
+                    <p class="i100">Lorem ipsum dolor sit amet consectetur.</p>
+                    <p class="i12">Lorem ipsum .</p>
+                    <i class="fa-solid fa-play i13"></i>
+                </div>
+                <img class="j" src="image/testi1.jpg" alt="">
+                <h3 class="j1">Jamal Vuiyan</h3>
+                <p class="j2">Founder</p>
+            </div>
+            <div class="i8">
+                <div class="i9">
+                    <p class="i10">Lorem ipsum dolor sit amet consectetur.</p>
+                    <p class="i100">Lorem ipsum dolor sit amet consectetur.</p>
+                    <p class="i100">Lorem ipsum dolor sit amet consectetur.</p>
+                    <p class="i100">Lorem ipsum dolor sit amet consectetur.</p>
+                    <p class="i12">Lorem ipsum .</p>
+                    <i class="fa-solid fa-play i13"></i>
+                </div>
+                <img class="j" src="image/testi2.jpg" alt="">
+                <h3 class="j1">Isral Jahan</h3>
+                <p class="j2">Developer</p>
+            </div>
+            <div class="i8">
+                <div class="i9">
+                    <p class="i10">Lorem ipsum dolor sit amet consectetur.</p>
+                    <p class="i100">Lorem ipsum dolor sit amet consectetur.</p>
+                    <p class="i100">Lorem ipsum dolor sit amet consectetur.</p>
+                    <p class="i100">Lorem ipsum dolor sit amet consectetur.</p>
+                    <p class="i12">Lorem ipsum .</p>
+                    <i class="fa-solid fa-play i13"></i>
+                </div>
+                <img class="j" src="image/testi3.jpg" alt="">
+                <h3 class="j1">Abrham Khan</h3>
+                <p class="j2">IT Manager</p>
+            </div>
+        </div>
+    </div>
+    <div class="j3">
+        <div class="j4">
+            <img class="j5" src="./image/ex.png" alt="">
+        </div>
+        <div class="j6">
+            <p class="j7">OUR EXPERIENCE</p>
+            <h1 class="j8">Stay Up, Stay Running</h1>
+            <h1 class="j9">& Protected</h1>
+            <div class="j10">
+                <div class="e10">
+                    <div class="e11"></div>
+                </div>
+            </div>
+            <p class="j11">High-tech industries play an important role in the modern</p>
+            <p class="j12">economy, and often experience significantly higher pay than</p>
+            <p class="j12">other industries. And Digital solutions</p>
+            <p class="j13">Web Development</p>
+            <div class="j14">
+                <div class="j15">
+                    <p class="j16">95%</p>
+                </div>
+            </div>
+            <p class="j113">Web Design</p>
+            <div class="j14">
+                <div class="j115">
+                    <p class="j16">90%</p>
+                </div>
+            </div>
+            <p class="j113">Digital Marketing</p>
+            <div class="j14">
+                <div class="j1115">
+                    <p class="j16">85%</p>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+    <div class="k">
+        <div class="kk">
+            <div class="k1">
+                <p class="k2">LATEST ARTICLE</p>
+                <h1 class="j8">See Our Latest</h1>
+                <h1 class="j9">Blog Posts</h1>
+                <div class="j10">
+                    <div class="e10">
+                        <div class="e11"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="k3">
+                <div class="k5"></div>
+                <p class="k4">See ALL Blogs</p>
+            </div>
+        </div>
+        <div class="k6">
+            <img class="k8" src="image/blog1.jpg" alt="">
+            <p class="k9">Techno</p>
+            <div class="k10"></div>
+            <p class="k11">January 3, 2023</p>
+            <h3 class="l">The five devices you need to</h3>
+            <h3 class="l1">work anytime</h3>
+            <p class="l2">Lorem ipsum dolor sit amet consectet</p>
+            <p class="l3">adipisie cing elit sed eiusmod tempor</p>
+            <p class="l3">incididunt on labore et dolore.</p>
+            <p class="l4">Read More<i class="fa-solid fa-arrow-right-long c4"></i></p>
+        </div>
+        <div class="k7">
+            <img class="k8" src="image/blog2.jpg" alt="">
+            <p class="k9">Techno</p>
+            <div class="k10"></div>
+            <p class="k11">December 3, 2023</p>
+            <h3 class="l">How to learn PHP 10 tips to</h3>
+            <h3 class="l1">get you started</h3>
+            <p class="l2">Lorem ipsum dolor sit amet consectet</p>
+            <p class="l3">adipisie cing elit sed eiusmod tempor</p>
+            <p class="l3">incididunt on labore et dolore.</p>
+            <p class="l4">Read More<i class="fa-solid fa-arrow-right-long c4"></i></p>
+        </div>
+        <div class="k7">
+            <img class="k8" src="image/blog3.jpg" alt="">
+            <p class="k9">Techno</p>
+            <div class="k10"></div>
+            <p class="k11">Augost 5, 2023</p>
+            <h3 class="l">The five devices you need to</h3>
+            <h3 class="l1">work anytime</h3>
+            <p class="l2">Lorem ipsum dolor sit amet consectet</p>
+            <p class="l3">adipisie cing elit sed eiusmod tempor</p>
+            <p class="l3">incididunt on labore et dolore.</p>
+            <p class="l4">Read More<i class="fa-solid fa-arrow-right-long c4"></i></p>
+        </div>
+    </div>
+    <div class="l5">
+        <h1 class="l6">Subscribe Our Newsletter</h1>
+        <input class="l7" placeholder="Enter Your Email" type="email">
+    </div>
+    <div class="l8">
+        <div class="l9">
+            <img src="./image/logo (1).png" alt="">
+            <p class="m">Condimentum rhoncus, sem quam</p>
+            <p class="m1">semper libero, sit amet adipiscing</p>
+            <p class="m1">sem neque sed ipsum. Nam quam</p>
+            <p class="m1">nunc, blandit vel, luctus.</p>
+            <p class="m2">Follow Us</p>
+
+
+
+        </div>
+        <div class="l10">
+            <p class="m3">Our Services</p>
+            <div class="m4"></div>
+            <p class="m5">Marketing Strategy</p>
+            <div class="m6"></div>
+            <p class="m5">Interior Design</p>
+            <div class="m6"></div>
+            <p class="m5">Digital Services</p>
+            <div class="m6"></div>
+            <p class="m5">Product Selling</p>
+            <div class="m6"></div>
+            <p class="m5">Product Design</p>
+            <div class="m6"></div>
+            <p class="m5">Social Marketing</p>
+
+
+        </div>
+        <div class="l9">
+            <p class="m3">Company Address</p>
+            <p class="m7">Porem awesome dolor sitework</p>
+            <p class="m1">amet, consetur acing elit, sed do</p>
+            <p class="m1">eiusmod ligal</p>
+            <p class="m9">Address :54/1 New dhas sorini</p>
+            <p class="m1">Asut, Melbord Austria.</p>
+            <p class="m8">Phone :54786547521</p>
+            <p class="m8">Email :demo@example.com</p>
+        </div>
+        <div class="l11">
+            <p class="m3">Popular Post</p>
+            <img class="m10" src="./image/recent1.jpg" alt="">
+            <h3 class="m11">Tiktok Illegally collecting data sharing</h3>
+            <p class="m12">December 12, 2023</p>
+            <div class="m13"></div>
+            <img class="m101" src="./image/recent3.jpg" alt="">
+            <h3 class="m111">How can use our latest news by</h3>
+            <p class="m121">December 15, 2023</p>
+        </div>
+        <div class="n"></div>
+        <p class="n1">© 2023 Techno.All Rights Reserved.</p>
+        <p class="n2">Privacy Policy</p>
+        <div class="n3"></div>
+        <p class="n4"> Terms & Conditions</p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="aa"></div><div class="aaa"></div>
+     <div class="a">
+         <div class="a1"></div>
+         <div class="a2"></div>
+         <div class="a3"></div>
+     </div>
+
+
+
+
+
+</body>
+
+</html>
